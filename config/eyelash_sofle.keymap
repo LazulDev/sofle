@@ -130,7 +130,7 @@
         layer_1 {
             bindings = <
 &kp ES_ORDM  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &rgb_ug RGB_SPI &kp F6               &kp F7           &kp F8         &kp F9        &kp F10           &none
-&none       &none            &kp UP_ARROW     &none            &kp HOME         &kp PG_UP          &none            &kp ES_CARET          &kp ES_PIPE      &kp ES_IEXCL   &kp ES_EXCL   &kp ES_LBKT       &kp ES_RBKT
+&none       &none            &kp UP_ARROW     &none            &kp HOME         &kp PG_UP          &rgb_ug RGB_SPD &kp ES_CARET          &kp ES_PIPE      &kp ES_IEXCL   &kp ES_EXCL   &kp ES_LBKT       &kp ES_RBKT
 &none       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp END          &kp PG_DN          &rgb_ug RGB_EFR &kp ES_SINGLE_QUOTE   &kp ES_BSLH      &kp ES_STAR    &kp ES_MINUS  &kp ES_LBRC       &kp ES_RBRC
 &none       &none            &none            &none            &none            &none              &rgb_ug RGB_EFF &kp ES_PLUS           &kp ES_UNDER     &kp ES_LT      &kp ES_GT     &kp ES_IQMARK     &kp ES_QMARK           
 &rgb_ug RGB_TOG &none         &none            &none            &none            &none              &none            &none                 &none            &none          &none         &none
