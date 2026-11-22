@@ -86,21 +86,21 @@
         spanish_open_punctuation: spanish_open_punctuation {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
             bindings = <&kp ES_IEXCL>, <&kp ES_IQMARK>;
         };
 
         spanish_question_quote: spanish_question_quote {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
             bindings = <&kp ES_SINGLE_QUOTE>, <&kp ES_QMARK>;
         };
 
         spanish_minus_underscore: spanish_minus_underscore {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
             bindings = <&kp ES_MINUS>, <&kp ES_UNDER>;
         };
        
