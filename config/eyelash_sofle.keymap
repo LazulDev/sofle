@@ -30,15 +30,15 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
-    vscroll_encoder: vscroll_encoder {
+    rgb_brightness_encoder: rgb_brightness_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
 
         tap-ms = <100>;
     };
 
-    hscroll_encoder: hscroll_encoder {
+    scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
@@ -129,13 +129,13 @@
 
         layer_1 {
             bindings = <
-&kp ES_ORDM  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6               &kp F7           &kp F8         &kp F9        &kp F10           &none
-&none       &none            &kp UP_ARROW     &none            &kp HOME         &kp PG_UP          &mmv MOVE_DOWN   &kp ES_CARET          &kp ES_PIPE      &kp ES_IEXCL   &kp ES_EXCL   &kp ES_LBKT       &kp ES_RBKT
-&none       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp END          &kp PG_DN          &mmv MOVE_LEFT   &kp ES_SINGLE_QUOTE   &kp ES_BSLH      &kp ES_STAR    &kp ES_MINUS  &kp ES_LBRC       &kp ES_RBRC
-&none       &none            &none            &none            &none            &none              &mmv MOVE_RIGHT  &kp ES_PLUS           &kp ES_UNDER     &kp ES_LT      &kp ES_GT     &kp ES_IQMARK     &kp ES_QMARK           
-&kp C_MUTE  &none            &none            &none            &none            &none              &none            &none                 &none            &none          &none         &none
+&kp ES_ORDM  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &rgb_ug RGB_SPI &kp F6               &kp F7           &kp F8         &kp F9        &kp F10           &none
+&none       &none            &kp UP_ARROW     &none            &kp HOME         &kp PG_UP          &none            &kp ES_CARET          &kp ES_PIPE      &kp ES_IEXCL   &kp ES_EXCL   &kp ES_LBKT       &kp ES_RBKT
+&none       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp END          &kp PG_DN          &rgb_ug RGB_EFR &kp ES_SINGLE_QUOTE   &kp ES_BSLH      &kp ES_STAR    &kp ES_MINUS  &kp ES_LBRC       &kp ES_RBRC
+&none       &none            &none            &none            &none            &none              &rgb_ug RGB_EFF &kp ES_PLUS           &kp ES_UNDER     &kp ES_LT      &kp ES_GT     &kp ES_IQMARK     &kp ES_QMARK           
+&rgb_ug RGB_TOG &none         &none            &none            &none            &none              &none            &none                 &none            &none          &none         &none
             >;
-            sensor-bindings = <&vscroll_encoder>;
+            sensor-bindings = <&rgb_brightness_encoder>;
             display-name = "Fn";
         };
 
@@ -147,7 +147,7 @@
 &none      &none            &none           &none             &none            &none          &mmv MOVE_RIGHT     &none           &none             &sys_reset   &soft_off    &bootloader  &none 
 &none      &none            &none            &none                 &none            &none     &none         &none            &none  &none        &none        &none
             >;
-            sensor-bindings = <&hscroll_encoder>;
+            sensor-bindings = <&scroll_encoder>;
             display-name = "Bluetooth";
         };
 
