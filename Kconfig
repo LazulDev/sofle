@@ -1,6 +1,0 @@
-config SOFL_CAPS_RGB_INDICATOR
-	bool "Caps Lock RGB indicator on the left half"
-	default n
-	depends on ZMK_HID_INDICATORS && ZMK_RGB_UNDERGLOW
-	help
-	  Build the Caps Lock RGB indicator only in the left-half firmware.
