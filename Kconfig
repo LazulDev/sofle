@@ -1,0 +1,5 @@
+config SOFL_RGB_LED_TEST
+	bool "Sofle RGB LED strip diagnostic"
+	default n
+	help
+	  Repeatedly lights one WS2812 LED at a time to identify strip order.
