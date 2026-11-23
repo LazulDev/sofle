@@ -1,5 +1,6 @@
-config SOFL_RGB_LED_TEST
-	bool "Sofle RGB LED strip diagnostic"
+config SOFL_CAPS_RGB_INDICATOR
+	bool "Caps Lock RGB indicator on the left half"
 	default n
+	depends on ZMK_HID_INDICATORS && ZMK_RGB_UNDERGLOW
 	help
-	  Repeatedly lights one WS2812 LED at a time to identify strip order.
+	  Build the Caps Lock RGB indicator only in the left-half firmware.

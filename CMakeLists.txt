@@ -1,3 +1,3 @@
-if(CONFIG_SOFL_RGB_LED_TEST)
-  target_sources(app PRIVATE src/rgb_led_test.c)
+if(CONFIG_SOFL_CAPS_RGB_INDICATOR)
+  target_sources(app PRIVATE src/caps_rgb_indicator.c)
 endif()

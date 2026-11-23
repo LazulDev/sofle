@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD EQUAL AND PLUS)))', s: '((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD EQUAL AND PLUS))))'}
-  - '&caps_with_leds'
+  - CAPSLOCK
   - A
   - S
   - D
