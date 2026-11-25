@@ -64,8 +64,8 @@ layers:
   - Config
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:backspace-reverse-outline$$
   Symbols:
   - F1
   - F2
