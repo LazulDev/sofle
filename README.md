@@ -15,6 +15,8 @@ En las teclas de escritura, el carácter central corresponde a una pulsación no
 
 ![Keymap](./keymap-drawer/eyelash_sofle.svg)
 
+En la capa **Config**, pulsa la tecla de la bombilla con una A si la iluminación se ve blanca. Restaura la saturación al 55 % y fija el tono en 90° y el brillo en el 40 %. Después puedes recorrer los colores con ↑ y ↓.
+
 ### Atajos de reinicio y flasheo
 
 Mantén pulsada **CAPA** (`BT | RGB | Sound`), la tecla del pulgar derecho junto a Espacio. Sin soltarla, pulsa **RESET** o **BOOT** en el borde exterior de la mitad que quieras reiniciar.

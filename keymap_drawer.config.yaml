@@ -117,6 +117,12 @@ parse_config:
     type: trans
 
   raw_binding_map:
+    "&rgb_ug RGB_HUI": {tap: '$$mdi:arrow-up-bold$$', hold: Color}
+    "&rgb_ug RGB_HUD": {tap: '$$mdi:arrow-down-bold$$', hold: Color}
+    "&rgb_ug RGB_EFR": {tap: '$$mdi:arrow-left-bold$$', hold: Efecto}
+    "&rgb_ug RGB_EFF": {tap: '$$mdi:arrow-right-bold$$', hold: Efecto}
+    "&rgb_ug RGB_COLOR_HSB(90,55,40)": '$$mdi:lightbulb-auto-outline$$'
+    "&rgb_ug RGB_TOG": $$mdi:lightbulb-outline$$
     "&backtick": "`"
     # Layers
     "&ltq 1 BACKSPACE":
@@ -217,6 +223,9 @@ parse_config:
       shifted: $$mdi:backspace-reverse-outline$$
 
     # Bluetooth
+    "&bt BT_CLR_ALL":
+      tap: $$mdi:bluetooth-off$$
+      hold: ALL
     "&bt BT_SEL 0":
       shifted: $$mdi:bluetooth-connect$$
       tap: ""
@@ -259,7 +268,7 @@ parse_config:
   # ZMK
   zmk_keycode_map:
     # Spanish legends for the localized ZMK bindings
-    ES_N_TILDE: {tap: "ñ", shifted: "Ñ"}
+    ES_N_TILDE: "Ñ"
     ES_ACUTE: {tap: "´", shifted: "¨"}
     ES_IEXCL: "¡"
     ES_IQMARK: "¿"
@@ -272,11 +281,11 @@ parse_config:
     ES_LBKT: "["
     ES_RBKT: "]"
     ES_STAR: "*"
-    ES_PLUS: {tap: "+", shifted: "*"}
+    ES_PLUS: "+"
     ES_LBRC: "{"
     ES_RBRC: "}"
     ES_BSLH: "\\"
-    ES_LT: {tap: "<", shifted: ">"}
+    ES_LT: "<"
     ES_GT: ">"
     ES_PIPE: "|"
 
@@ -509,7 +518,9 @@ parse_config:
     # Media
     C_NEXT: $$mdi:skip-next$$
     C_PREV: $$mdi:skip-previous$$
+    C_PREVIOUS: $$mdi:skip-previous$$
     C_PP: $$mdi:play-pause$$
+    C_PLAY_PAUSE: $$mdi:play-pause$$
 
     # Bluetooth
     BT_CLR: $$mdi:bluetooth-off$$
