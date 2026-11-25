@@ -11,6 +11,8 @@ Eyelash Sofle Keyboard ZMK Wireless
 
 ## Mapa de teclas
 
+En las teclas de escritura, el carácter central corresponde a una pulsación normal. Los símbolos adicionales indican qué se escribe con **Shift** (arriba) o con **Opción / Alt** (abajo).
+
 ![Keymap](./keymap-drawer/eyelash_sofle.svg)
 
 ### Atajos de reinicio y flasheo

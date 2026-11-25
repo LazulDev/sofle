@@ -117,6 +117,7 @@ parse_config:
     type: trans
 
   raw_binding_map:
+    "&backtick": "`"
     # Layers
     "&ltq 1 BACKSPACE":
       tap:  $$mdi:backspace$$
@@ -257,6 +258,28 @@ parse_config:
 
   # ZMK
   zmk_keycode_map:
+    # Spanish legends for the localized ZMK bindings
+    ES_N_TILDE: {tap: "ñ", shifted: "Ñ"}
+    ES_ACUTE: {tap: "´", shifted: "¨"}
+    ES_IEXCL: "¡"
+    ES_IQMARK: "¿"
+    ES_SINGLE_QUOTE: "'"
+    ES_QMARK: "?"
+    ES_MINUS: "-"
+    ES_UNDER: "_"
+    ES_LPAR: "("
+    ES_RPAR: ")"
+    ES_LBKT: "["
+    ES_RBKT: "]"
+    ES_STAR: "*"
+    ES_PLUS: {tap: "+", shifted: "*"}
+    ES_LBRC: "{"
+    ES_RBRC: "}"
+    ES_BSLH: "\\"
+    ES_LT: {tap: "<", shifted: ">"}
+    ES_GT: ">"
+    ES_PIPE: "|"
+
     # Symbols
     EXCLAMATION: "!"
     EXCL: "!"
@@ -332,10 +355,12 @@ parse_config:
     PERIOD: '.'
     DOT:
       tap: "."
-      shifted: ">"
+      shifted: ":"
+      hold: "…"
     COMMA:
       tap: ","
-      shifted: "<"
+      shifted: ";"
+      hold: "„"
     GREATER_THAN: ">"
     GT: ">"
     LEFT_BRACKET:
@@ -366,33 +391,43 @@ parse_config:
     N1:
       tap: 1
       shifted: "!"
+      hold: "|"
     N2:
       tap: 2
-      shifted: "@"
+      shifted: "\""
+      hold: "@"
     N3:
       tap: 3
-      shifted: "#"
+      shifted: "·"
+      hold: "#"
     N4:
       tap: 4
       shifted: "$"
+      hold: "¢"
     N5:
       tap: 5
       shifted: "%"
+      hold: "∞"
     N6:
       tap: 6
-      shifted: "^"
+      shifted: "&"
+      hold: "¬"
     N7:
       tap: 7
-      shifted: "&"
+      shifted: "/"
+      hold: "÷"
     N8:
       tap: 8
-      shifted: "*"
+      shifted: "("
+      hold: "“"
     N9:
       tap: 9
-      shifted: "("
+      shifted: ")"
+      hold: "”"
     N0:
       tap: 0
-      shifted: ")"
+      shifted: "="
+      hold: "≠"
 
     # Modifiers
     LCTRL: $$mdi:apple-keyboard-control$$
