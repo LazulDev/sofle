@@ -38,10 +38,10 @@
         tap-ms = <100>;
     };
 
-    scroll_encoder: scroll_encoder {
+    zoom_encoder: zoom_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+        bindings = <&kp LG(ES_PLUS)>, <&kp LG(ES_MINUS)>;
 
         tap-ms = <100>;
     };
@@ -153,7 +153,7 @@
 &trans     &none        &none        &kp ES_LT    &kp ES_GT    &kp ES_PIPE  &mmv MOVE_RIGHT  &none   &none           &none           &none            &none    &none
 &mkp LCLK  &trans       &trans       &trans       &none        &none        &none            &trans  &none           &trans          &trans           &none
             >;
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&zoom_encoder>;
             display-name = "Symbols";
         };
 
