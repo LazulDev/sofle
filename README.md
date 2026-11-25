@@ -13,13 +13,31 @@ Eyelash Sofle Keyboard ZMK Wireless
 
 ![Keymap](./keymap-drawer/eyelash_sofle.svg)
 
+### Atajos de reinicio y flasheo
+
+Mantén pulsada **CAPA** (`BT | RGB | Sound`), la tecla del pulgar derecho junto a Espacio. Sin soltarla, pulsa **RESET** o **BOOT** en el borde exterior de la mitad que quieras reiniciar.
+
+```text
+       Mitad izquierda                Mitad derecha
+   [  ][  ][  ][  ][  ][  ]    [  ][  ][  ][  ][  ][  ]
+   [  ][  ][  ][  ][  ][  ]    [  ][  ][  ][  ][  ][  ]
+[RESET][  ][  ][  ][  ][  ]    [  ][  ][  ][  ][  ][RESET]
+[BOOT ][  ][  ][  ][  ][  ]    [  ][  ][  ][  ][  ][BOOT ]
+           [  ][  ][  ][  ][  ]    [CAPA][  ][  ][  ][  ]
+```
+
+- **RESET** (`&sys_reset`) reinicia la mitad con el firmware instalado. Ocupa la posición de **Caps Lock** a la izquierda y del **acento** (`´`) a la derecha.
+- **BOOT** (`&bootloader`) abre el gestor de arranque para cargar un nuevo `.uf2`. Está justo debajo de RESET, en **Shift izquierdo** o **¡/¿**.
+
+Cada atajo actúa solo sobre la mitad donde lo pulsas. El reinicio normal conserva los emparejamientos Bluetooth y la configuración guardada.
+
 ## Compilación
 El firmware se compila automáticamente a través de GitHub Actions al realizar un «push». Descarga los archivos .uf2 desde la pestaña «Actions».
 
 
 ## Flasheo
 Conecta una mitad mediante USB.
-Haz doble clic en el botón de reinicio del nice!nano para acceder al gestor de arranque (aparece como una unidad USB).
+Usa el atajo `&bootloader` de esa mitad o pulsa dos veces el botón físico de reinicio del nice!nano. La mitad conectada aparecerá como una unidad USB.
 Arrastra el archivo .uf2 correspondiente a la unidad.
 Orden de programación para el emparejamiento: primero la mitad derecha y, a continuación, la mitad izquierda.
 
