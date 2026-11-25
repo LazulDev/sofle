@@ -142,9 +142,9 @@
         layer_1 {
             bindings = <
 &kp F1      &kp F2      &kp F3       &kp F4       &kp F5        &kp F6    &mmv MOVE_UP    &kp F7  &kp F8         &kp F9         &kp F10         &kp F11  &kp F12
-&none       &none       &kp ES_PLUS  &kp ES_LBKT  &kp ES_RBKT   &none     &mmv MOVE_DOWN  &none   &none          &kp UP_ARROW   &none           &none    &none
-&none       &kp ES_LT   &kp ES_GT    &kp ES_LBRC  &kp ES_RBRC   &none     &mmv MOVE_RIGHT &none   &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &none    &none
-&trans      &none       &none        &none        &none         &none     &mmv MOVE_LEFT  &none   &none          &none          &none           &none    &none           
+&none        &kp ES_LPAR  &kp ES_RPAR  &kp ES_LBKT  &kp ES_RBKT  &kp ES_STAR  &mmv MOVE_DOWN  &none   &none          &kp UP_ARROW   &none           &none    &none
+&none        &none        &kp ES_PLUS  &kp ES_LBRC  &kp ES_RBRC  &kp ES_BSLH  &mmv MOVE_LEFT  &none   &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &none    &none
+&trans       &none        &none        &kp ES_LT    &kp ES_GT    &kp ES_PIPE  &mmv MOVE_RIGHT &none   &none          &none          &none           &none    &none
 &mkp LCLK   &trans      &trans       &trans       &none         &none     &none           &trans  &none          &trans         &trans          &none
             >;
             sensor-bindings = <&scroll_encoder>;
