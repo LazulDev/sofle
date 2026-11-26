@@ -47,9 +47,3 @@ Orden de programación para el emparejamiento: primero la mitad derecha y, a con
 
 ## Reestablecer la configuración
 Carga el archivo settings_reset.uf2 para borrar los emparejamientos de Bluetooth y la configuración almacenada en ambas mitades. A continuación, vuelve a flashear el firmware normalmente.
-
-
-## Archivos originales para restaurar firmware
-
-En [bkp/](bkp/) se conservan los archivos copiados de las unidades USB del
-bootloader del teclado.
