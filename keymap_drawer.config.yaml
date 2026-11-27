@@ -121,7 +121,7 @@ parse_config:
     "&rgb_ug RGB_HUD": {tap: '$$mdi:arrow-down-bold$$', hold: Color}
     "&rgb_ug RGB_EFR": {tap: '$$mdi:arrow-left-bold$$', hold: Efecto}
     "&rgb_ug RGB_EFF": {tap: '$$mdi:arrow-right-bold$$', hold: Efecto}
-    "&rgb_ug RGB_COLOR_HSB(90,90,40)": '$$mdi:lightbulb-auto-outline$$'
+    "&rgb_ug RGB_COLOR_HSB(90,100,40)": '$$mdi:lightbulb-auto-outline$$'
     "&rgb_ug RGB_TOG": $$mdi:lightbulb-outline$$
     "&backtick": "`"
     # Layers
